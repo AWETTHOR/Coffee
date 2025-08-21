@@ -1,0 +1,41 @@
+
+
+/* LG SCREEN */
+/* 1075px - 1500px */
+@media (max-width: 67.2rem) {
+    html {
+        /* 9px / 16px = */
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width:56rem) {
+    /* 888px / 16 = */
+    html {
+        /* 8px / 16px  */ 
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 46rem) {
+    /* 728 / 16 = 45.5*/
+
+    html {
+        /* 7px / 16 = 43.75 */
+        font-size: 44%;
+    }
+}
+
+@media (max-width: 34.1rem) {
+    /* 545 / 16 = 34.1rem */
+
+    html {
+        /* 6px  / 16 = 37.5 */
+        font-size: 37.5%;
+    }
+
+    .header-main-section .hero-section-container .hero-section-content {
+        grid-template-columns:  1fr;
+    }
+}
+

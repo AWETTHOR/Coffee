@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* 
+
+    -------------  TYPOGRAPHY -------------
+    FONT SIZES
+    12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px / 
+
+    FONT WEIGHT 
+    400 / 700
+
+    LINE HEIGHT 
+    1.2 / 1.5
+
+    LETTER SPACING 
+    0 / -2px
+
+    FONT FAMILY
+    Poppins
+
+    ------------- COLORS  ------------- 
+
+    PRIMARY
+    Base: #fff  (white)
+    Tint: #fff  (white)
+    Shade: #fff  (white)
+
+    SECONDARY
+    Base: #fff  (white)
+    Tint: #fff  (white)
+    Shade: #fff  (white)
+
+    TERTIARY
+    Base: #fff  (white)
+    Tint: #fff  (white)
+    Shade: #fff  (white)
+
+    GREY
+    Base: #fff  (white)
+    Tint: #fff  (white)
+    Shade: #fff  (white)
+
+*/
+
+
+:root{
+    --primary-color:#fff;
+    --gray-color:#000;
+}
+
+/* --------------------------- GLOBAL STYLE  ---------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--gray-color);
+}
+
+h1, h2, h3, h4{
+    color: var(--primary-color);
+}
+
+h1{
+    font-size:3rem;
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+    color:var(--primary-color);
+}
+
+a{
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+ul{
+    list-style: none;
+}
+
+img {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px 100px;
+}
+
+
+/* --------------------------- COMPONENTS STYLE  ---------------------------*/
+.btn {
+    background-color: var(--primary-color);
+    color: var(--gray-color);
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition:  all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/*---------------------- SECTIONS-----------------------*/
+/*    <!-- ============= HEADER SECTION  ============= --> */
+.header-main-section {
+    max-width: 1500px;
+    width:90%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.header-main-section .header-main-content {
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main-section .header-main-content .header-logo h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.header-main-section .header-main-content .header-list-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-main-section .header-main-content .header-list-container  a:hover{
+    opacity: 0.7;
+}
+
+/* hero-section */
+.header-main-section .hero-section-container {
+    margin-top: 15rem;
+}
+
+.header-main-section .hero-section-container .hero-section-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-content: center;
+    justify-items: center;
+}
+
+.header-main-section .hero-section-container .hero-section-content .hero-section-text h1, p{
+    margin-bottom: 1.5rem;
+}
